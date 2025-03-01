@@ -1,0 +1,17 @@
+We used the driver-navigator teamwork method. 
+In PC4, I drew the design diagram and wrote code for small modules like PC and sign-extender. When my partner was writing code for the processor and I was aside checking for correctness. He wrote test code, then we tested the program together.
+In PC5, I drew the design diagram, and was responsible for writing code, while my partner was aside checking for my correctness. He also wrote testcode. The  we tested the program together.
+
+
+ I use ALU's isNotEqual($rd is muxed to ctrl_RegReadB) && when the insn type is bne(ALU opcode 00010)
+
+setX, jal, lw. Because in my design, writeReg is in the last stage.
+
+Imem and Dmem are slow, so they need to be higher in frequency so as to make sure there is sufficient time for memory accessing. PC and Regfile clock are slow, so as to wait for all data from memory. Imem uses neg-edge, because it's needed right after PC's positive edge.
+Regfile has the same clock as PC, because writeReg is the last stage. We can write to reg when PC = PC + 1
+
+pc adder(+1), branch adder and 3 muxes. Because lots of insns lead to PC's different value
+
+I divided the insns into groups and draw the diagram by hand, making incrementally development for each group of insns. 
+
+While running PC4, Quartus repeatedly crashed midway with no error messages. By testing each module, I isolated the issue: I mistakenly used AND() instead of and(). Also, I had exposed all pc signals as outputs for debugging, which caused extremely long compilation times, even preventing waveform testing. After researching online, I learned to inspect internal wires in Modelsim for waveform testing, solving both issues effectively.
