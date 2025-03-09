@@ -1,0 +1,145 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Duke_HW/ECE_550D/Project_1/simulation/modelsim
+valu
+Z1 !s110 1726083320
+!i10b 1
+!s100 QVhT=aNiVaY8:9fm>l_752
+I;W[nQB=hK=9znOF85[kNX2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1726025413
+8D:/Duke_HW/ECE_550D/Project_1/alu.v
+FD:/Duke_HW/ECE_550D/Project_1/alu.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1726083319.000000
+!s107 D:/Duke_HW/ECE_550D/Project_1/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Duke_HW/ECE_550D/Project_1|D:/Duke_HW/ECE_550D/Project_1/alu.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+D:/Duke_HW/ECE_550D/Project_1
+Z6 tCvgOpt 0
+valu_tb
+R1
+!i10b 1
+!s100 _VBMEf4SJmm`BE`nXKY=C0
+IO_`NAUcneaZKSYV_JCh9Q3
+R2
+R0
+w1726083169
+8D:/Duke_HW/ECE_550D/Project_1/alu_tb.v
+FD:/Duke_HW/ECE_550D/Project_1/alu_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+Z7 !s108 1726083320.000000
+!s107 D:/Duke_HW/ECE_550D/Project_1/alu_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Duke_HW/ECE_550D/Project_1|D:/Duke_HW/ECE_550D/Project_1/alu_tb.v|
+!i113 1
+R4
+R5
+R6
+vCSA_32bit
+R1
+!i10b 1
+!s100 E]?aBUbi?L`Y4GON;Y8hK1
+IH:Xk`YPEUZToAdiXaUC>g0
+R2
+R0
+w1726025904
+8D:/Duke_HW/ECE_550D/Project_1/CSA_32bit.v
+FD:/Duke_HW/ECE_550D/Project_1/CSA_32bit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R7
+!s107 D:/Duke_HW/ECE_550D/Project_1/CSA_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Duke_HW/ECE_550D/Project_1|D:/Duke_HW/ECE_550D/Project_1/CSA_32bit.v|
+!i113 1
+R4
+R5
+R6
+n@c@s@a_32bit
+vfull_adder
+R1
+!i10b 1
+!s100 FzoaSZG5Q1Hj_jFcaG8[B2
+I@C@K5[lZDSPUk:?11lah]0
+R2
+R0
+w1726016141
+8D:/Duke_HW/ECE_550D/Project_1/full_adder.v
+FD:/Duke_HW/ECE_550D/Project_1/full_adder.v
+L0 1
+R3
+r1
+!s85 0
+31
+R7
+!s107 D:/Duke_HW/ECE_550D/Project_1/full_adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Duke_HW/ECE_550D/Project_1|D:/Duke_HW/ECE_550D/Project_1/full_adder.v|
+!i113 1
+R4
+R5
+R6
+vRCA_8bit
+R1
+!i10b 1
+!s100 O[kGFdHzZAb9197k]g9Ok2
+Iem8TXeAU0L9jaMAHh[ME^0
+R2
+R0
+w1726025680
+8D:/Duke_HW/ECE_550D/Project_1/RCA_8bit.v
+FD:/Duke_HW/ECE_550D/Project_1/RCA_8bit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R7
+!s107 D:/Duke_HW/ECE_550D/Project_1/RCA_8bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Duke_HW/ECE_550D/Project_1|D:/Duke_HW/ECE_550D/Project_1/RCA_8bit.v|
+!i113 1
+R4
+R5
+R6
+n@r@c@a_8bit
+vRCA_8bit_pro
+R1
+!i10b 1
+!s100 Uz6`fEa1O3o8[W7f]1g<`3
+IfFmcmL]>5i5JP_9BJHAHd2
+R2
+R0
+w1726025930
+8D:/Duke_HW/ECE_550D/Project_1/RCA_8bit_pro.v
+FD:/Duke_HW/ECE_550D/Project_1/RCA_8bit_pro.v
+L0 1
+R3
+r1
+!s85 0
+31
+R7
+!s107 D:/Duke_HW/ECE_550D/Project_1/RCA_8bit_pro.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Duke_HW/ECE_550D/Project_1|D:/Duke_HW/ECE_550D/Project_1/RCA_8bit_pro.v|
+!i113 1
+R4
+R5
+R6
+n@r@c@a_8bit_pro

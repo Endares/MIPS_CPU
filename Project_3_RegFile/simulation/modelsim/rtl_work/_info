@@ -1,0 +1,208 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Duke_HW/ECE_550D/Project_3_RegFile/simulation/modelsim
+vdec_5to32
+Z1 !s110 1727889920
+!i10b 1
+!s100 `MISCIPd9M^LZFTkP7f391
+IVY]UoV:CHI61BVRCFTg>F3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1727836808
+8D:/Duke_HW/ECE_550D/Project_3_RegFile/dec_5to32.v
+FD:/Duke_HW/ECE_550D/Project_3_RegFile/dec_5to32.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1727889920.000000
+!s107 D:/Duke_HW/ECE_550D/Project_3_RegFile/dec_5to32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Duke_HW/ECE_550D/Project_3_RegFile|D:/Duke_HW/ECE_550D/Project_3_RegFile/dec_5to32.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+D:/Duke_HW/ECE_550D/Project_3_RegFile
+Z7 tCvgOpt 0
+vdffe_with_clr
+Z8 !s110 1727889921
+!i10b 1
+!s100 >^Nh4lzI[K7Wd>[57Hie`3
+IUA@Q2CR5Q1z^_iA=GKVNS2
+R2
+R0
+w1727889725
+8D:/Duke_HW/ECE_550D/Project_3_RegFile/dffe.v
+FD:/Duke_HW/ECE_550D/Project_3_RegFile/dffe.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z9 !s108 1727889921.000000
+!s107 D:/Duke_HW/ECE_550D/Project_3_RegFile/dffe.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Duke_HW/ECE_550D/Project_3_RegFile|D:/Duke_HW/ECE_550D/Project_3_RegFile/dffe.v|
+!i113 1
+R5
+R6
+R7
+vr_port
+R8
+!i10b 1
+!s100 TC=T3QO^O7;U9Y:8VbkDf1
+I]GSHzDO7YM[1=b1;Ki6:G0
+R2
+R0
+w1727882299
+8D:/Duke_HW/ECE_550D/Project_3_RegFile/r_port.v
+FD:/Duke_HW/ECE_550D/Project_3_RegFile/r_port.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 D:/Duke_HW/ECE_550D/Project_3_RegFile/r_port.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Duke_HW/ECE_550D/Project_3_RegFile|D:/Duke_HW/ECE_550D/Project_3_RegFile/r_port.v|
+!i113 1
+R5
+R6
+R7
+vreg_32bits
+R1
+!i10b 1
+!s100 ;DG1gBi[5k5@gKiQR`=;V0
+IHRBf;MRzhG1KnO]nHkAmk3
+R2
+R0
+w1727882603
+8D:/Duke_HW/ECE_550D/Project_3_RegFile/reg_32bits.v
+FD:/Duke_HW/ECE_550D/Project_3_RegFile/reg_32bits.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Duke_HW/ECE_550D/Project_3_RegFile/reg_32bits.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Duke_HW/ECE_550D/Project_3_RegFile|D:/Duke_HW/ECE_550D/Project_3_RegFile/reg_32bits.v|
+!i113 1
+R5
+R6
+R7
+vreg_sets_of_32
+R8
+!i10b 1
+!s100 zJC5h:n]<;glAfV[W>V3P2
+IGiYb7@?AW>;hC2YiRWSbe3
+R2
+R0
+w1727885953
+8D:/Duke_HW/ECE_550D/Project_3_RegFile/reg_sets_of_32.v
+FD:/Duke_HW/ECE_550D/Project_3_RegFile/reg_sets_of_32.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 D:/Duke_HW/ECE_550D/Project_3_RegFile/reg_sets_of_32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Duke_HW/ECE_550D/Project_3_RegFile|D:/Duke_HW/ECE_550D/Project_3_RegFile/reg_sets_of_32.v|
+!i113 1
+R5
+R6
+R7
+vregfile
+R1
+!i10b 1
+!s100 N@NCOj<lRY9@n832EYSX`2
+Io=^66da;9?c]Naja9@hbP2
+R2
+R0
+w1727882459
+8D:/Duke_HW/ECE_550D/Project_3_RegFile/regfile.v
+FD:/Duke_HW/ECE_550D/Project_3_RegFile/regfile.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Duke_HW/ECE_550D/Project_3_RegFile/regfile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Duke_HW/ECE_550D/Project_3_RegFile|D:/Duke_HW/ECE_550D/Project_3_RegFile/regfile.v|
+!i113 1
+R5
+R6
+R7
+vregfile_tb
+R8
+!i10b 1
+!s100 8BPIVgmcWfmE7R>79DK8M3
+IgZBM>[[?;8l:2AWJSoA522
+R2
+R0
+w1727886179
+8D:/Duke_HW/ECE_550D/Project_3_RegFile/regfile_tb.v
+FD:/Duke_HW/ECE_550D/Project_3_RegFile/regfile_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R9
+!s107 D:/Duke_HW/ECE_550D/Project_3_RegFile/regfile_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Duke_HW/ECE_550D/Project_3_RegFile|D:/Duke_HW/ECE_550D/Project_3_RegFile/regfile_tb.v|
+!i113 1
+R5
+R6
+R7
+vtristate_buffer_32
+R8
+!i10b 1
+!s100 ?jzX:DeUm@]ZPADb=ggzC3
+INEcARalNB]GUXVPQTLiKX3
+R2
+R0
+w1727884384
+8D:/Duke_HW/ECE_550D/Project_3_RegFile/tristate_buffer_32.v
+FD:/Duke_HW/ECE_550D/Project_3_RegFile/tristate_buffer_32.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 D:/Duke_HW/ECE_550D/Project_3_RegFile/tristate_buffer_32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Duke_HW/ECE_550D/Project_3_RegFile|D:/Duke_HW/ECE_550D/Project_3_RegFile/tristate_buffer_32.v|
+!i113 1
+R5
+R6
+R7
+vw_port
+R8
+!i10b 1
+!s100 agFhU22OFbJDV1NU8`09E0
+II4DKgnNR2B?UFXnElFmQ60
+R2
+R0
+w1727838854
+8D:/Duke_HW/ECE_550D/Project_3_RegFile/w_port.v
+FD:/Duke_HW/ECE_550D/Project_3_RegFile/w_port.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 D:/Duke_HW/ECE_550D/Project_3_RegFile/w_port.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Duke_HW/ECE_550D/Project_3_RegFile|D:/Duke_HW/ECE_550D/Project_3_RegFile/w_port.v|
+!i113 1
+R5
+R6
+R7

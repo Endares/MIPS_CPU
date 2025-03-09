@@ -1,0 +1,239 @@
+# Reading D:/SoftwareDownload/Quartus/modelsim_ase/tcl/vsim/pref.tcl
+# do SimpleProcessor_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/SoftwareDownload/Quartus/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/Duke_HW/ECE_550D/Project_5_Processor {D:/Duke_HW/ECE_550D/Project_5_Processor/skeleton.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:47:20 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Duke_HW/ECE_550D/Project_5_Processor" D:/Duke_HW/ECE_550D/Project_5_Processor/skeleton.v 
+# -- Compiling module skeleton
+# 
+# Top level modules:
+# 	skeleton
+# End time: 19:47:20 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Duke_HW/ECE_550D/Project_5_Processor {D:/Duke_HW/ECE_550D/Project_5_Processor/regfile.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:47:20 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Duke_HW/ECE_550D/Project_5_Processor" D:/Duke_HW/ECE_550D/Project_5_Processor/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 19:47:20 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Duke_HW/ECE_550D/Project_5_Processor {D:/Duke_HW/ECE_550D/Project_5_Processor/processor.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:47:20 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Duke_HW/ECE_550D/Project_5_Processor" D:/Duke_HW/ECE_550D/Project_5_Processor/processor.v 
+# -- Compiling module processor
+# 
+# Top level modules:
+# 	processor
+# End time: 19:47:20 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Duke_HW/ECE_550D/Project_5_Processor {D:/Duke_HW/ECE_550D/Project_5_Processor/alu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:47:20 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Duke_HW/ECE_550D/Project_5_Processor" D:/Duke_HW/ECE_550D/Project_5_Processor/alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 19:47:20 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Duke_HW/ECE_550D/Project_5_Processor {D:/Duke_HW/ECE_550D/Project_5_Processor/control_unit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:47:21 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Duke_HW/ECE_550D/Project_5_Processor" D:/Duke_HW/ECE_550D/Project_5_Processor/control_unit.v 
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 19:47:21 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Duke_HW/ECE_550D/Project_5_Processor {D:/Duke_HW/ECE_550D/Project_5_Processor/sign_extender.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:47:21 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Duke_HW/ECE_550D/Project_5_Processor" D:/Duke_HW/ECE_550D/Project_5_Processor/sign_extender.v 
+# -- Compiling module sign_extender
+# 
+# Top level modules:
+# 	sign_extender
+# End time: 19:47:21 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Duke_HW/ECE_550D/Project_5_Processor {D:/Duke_HW/ECE_550D/Project_5_Processor/RCA_12bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:47:21 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Duke_HW/ECE_550D/Project_5_Processor" D:/Duke_HW/ECE_550D/Project_5_Processor/RCA_12bit.v 
+# -- Compiling module RCA_12bit
+# 
+# Top level modules:
+# 	RCA_12bit
+# End time: 19:47:21 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Duke_HW/ECE_550D/Project_5_Processor {D:/Duke_HW/ECE_550D/Project_5_Processor/full_adder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:47:21 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Duke_HW/ECE_550D/Project_5_Processor" D:/Duke_HW/ECE_550D/Project_5_Processor/full_adder.v 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 19:47:21 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Duke_HW/ECE_550D/Project_5_Processor {D:/Duke_HW/ECE_550D/Project_5_Processor/dffe_12.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:47:21 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Duke_HW/ECE_550D/Project_5_Processor" D:/Duke_HW/ECE_550D/Project_5_Processor/dffe_12.v 
+# -- Compiling module dffe_12
+# 
+# Top level modules:
+# 	dffe_12
+# End time: 19:47:21 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Duke_HW/ECE_550D/Project_5_Processor {D:/Duke_HW/ECE_550D/Project_5_Processor/dffe.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:47:21 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Duke_HW/ECE_550D/Project_5_Processor" D:/Duke_HW/ECE_550D/Project_5_Processor/dffe.v 
+# -- Compiling module dffe_ref
+# 
+# Top level modules:
+# 	dffe_ref
+# End time: 19:47:22 on Nov 17,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Duke_HW/ECE_550D/Project_5_Processor {D:/Duke_HW/ECE_550D/Project_5_Processor/adder_plus1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:47:22 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Duke_HW/ECE_550D/Project_5_Processor" D:/Duke_HW/ECE_550D/Project_5_Processor/adder_plus1.v 
+# -- Compiling module adder_plus1
+# 
+# Top level modules:
+# 	adder_plus1
+# End time: 19:47:22 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Duke_HW/ECE_550D/Project_5_Processor {D:/Duke_HW/ECE_550D/Project_5_Processor/dmem.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:47:22 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Duke_HW/ECE_550D/Project_5_Processor" D:/Duke_HW/ECE_550D/Project_5_Processor/dmem.v 
+# -- Compiling module dmem
+# 
+# Top level modules:
+# 	dmem
+# End time: 19:47:22 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Duke_HW/ECE_550D/Project_5_Processor {D:/Duke_HW/ECE_550D/Project_5_Processor/imem.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:47:22 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Duke_HW/ECE_550D/Project_5_Processor" D:/Duke_HW/ECE_550D/Project_5_Processor/imem.v 
+# -- Compiling module imem
+# 
+# Top level modules:
+# 	imem
+# End time: 19:47:22 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Duke_HW/ECE_550D/Project_5_Processor {D:/Duke_HW/ECE_550D/Project_5_Processor/clk_divn.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:47:22 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Duke_HW/ECE_550D/Project_5_Processor" D:/Duke_HW/ECE_550D/Project_5_Processor/clk_divn.v 
+# -- Compiling module clk_divn
+# 
+# Top level modules:
+# 	clk_divn
+# End time: 19:47:22 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Duke_HW/ECE_550D/Project_5_Processor {D:/Duke_HW/ECE_550D/Project_5_Processor/sign_extender_27to32.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:47:22 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Duke_HW/ECE_550D/Project_5_Processor" D:/Duke_HW/ECE_550D/Project_5_Processor/sign_extender_27to32.v 
+# -- Compiling module sign_extender_27to32
+# 
+# Top level modules:
+# 	sign_extender_27to32
+# End time: 19:47:22 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/Duke_HW/ECE_550D/Project_5_Processor {D:/Duke_HW/ECE_550D/Project_5_Processor/skeleton_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:47:22 on Nov 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Duke_HW/ECE_550D/Project_5_Processor" D:/Duke_HW/ECE_550D/Project_5_Processor/skeleton_tb.v 
+# -- Compiling module skeleton_tb
+# 
+# Top level modules:
+# 	skeleton_tb
+# End time: 19:47:22 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  skeleton_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" skeleton_tb 
+# Start time: 19:47:22 on Nov 17,2024
+# Loading work.skeleton_tb
+# Loading work.skeleton
+# Loading work.clk_divn
+# Loading work.imem
+# Loading altera_mf_ver.altsyncram
+# Loading work.dmem
+# Loading work.regfile
+# Loading work.processor
+# Loading work.adder_plus1
+# Loading work.RCA_12bit
+# Loading work.full_adder
+# Loading work.dffe_12
+# Loading work.control_unit
+# Loading work.sign_extender_27to32
+# Loading work.sign_extender
+# Loading work.alu
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.dffe_ref
+# ** Warning: (vsim-3015) D:/Duke_HW/ECE_550D/Project_5_Processor/adder_plus1.v(6): [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: D:/Duke_HW/ECE_550D/Project_5_Processor/RCA_12bit.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /skeleton_tb/test/my_processor/pc_incrementer/RCA12_inst File: D:/Duke_HW/ECE_550D/Project_5_Processor/RCA_12bit.v
+# ** Warning: (vsim-3015) D:/Duke_HW/ECE_550D/Project_5_Processor/processor.v(132): [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: D:/Duke_HW/ECE_550D/Project_5_Processor/RCA_12bit.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /skeleton_tb/test/my_processor/branch_adder File: D:/Duke_HW/ECE_550D/Project_5_Processor/RCA_12bit.v
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : D:/Duke_HW/ECE_550D/Project_5_Processor/skeleton_tb.v(24)
+#    Time: 6100 us  Iteration: 0  Instance: /skeleton_tb
+# Break in Module skeleton_tb at D:/Duke_HW/ECE_550D/Project_5_Processor/skeleton_tb.v line 24
+add wave -position end  sim:/skeleton_tb/test/regfile_clock
+add wave -position end  sim:/skeleton_tb/test/q_imem
+add wave -position end  sim:/skeleton_tb/test/q_dmem
+add wave -position end  sim:/skeleton_tb/test/processor_clock
+add wave -position end  sim:/skeleton_tb/test/imem_clock
+add wave -position end  sim:/skeleton_tb/test/dmem_clock
+add wave -position end  sim:/skeleton_tb/test/data_writeReg
+add wave -position end  sim:/skeleton_tb/test/data_readRegB
+add wave -position end  sim:/skeleton_tb/test/data_readRegA
+add wave -position end  sim:/skeleton_tb/test/data
+add wave -position end  sim:/skeleton_tb/test/ctrl_writeReg
+add wave -position end  sim:/skeleton_tb/test/ctrl_writeEnable
+add wave -position end  sim:/skeleton_tb/test/ctrl_readRegB
+add wave -position end  sim:/skeleton_tb/test/ctrl_readRegA
+add wave -position end  sim:/skeleton_tb/test/clock
+add wave -position end  sim:/skeleton_tb/test/address_imem
+add wave -position end  sim:/skeleton_tb/test/address_dmem
+restart -f
+# ** Warning: (vsim-3015) D:/Duke_HW/ECE_550D/Project_5_Processor/adder_plus1.v(6): [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: D:/Duke_HW/ECE_550D/Project_5_Processor/RCA_12bit.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /skeleton_tb/test/my_processor/pc_incrementer/RCA12_inst File: D:/Duke_HW/ECE_550D/Project_5_Processor/RCA_12bit.v
+# ** Warning: (vsim-3015) D:/Duke_HW/ECE_550D/Project_5_Processor/processor.v(132): [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: D:/Duke_HW/ECE_550D/Project_5_Processor/RCA_12bit.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /skeleton_tb/test/my_processor/branch_adder File: D:/Duke_HW/ECE_550D/Project_5_Processor/RCA_12bit.v
+run -all
+# ** Note: $stop    : D:/Duke_HW/ECE_550D/Project_5_Processor/skeleton_tb.v(24)
+#    Time: 6100 us  Iteration: 0  Instance: /skeleton_tb
+# Break in Module skeleton_tb at D:/Duke_HW/ECE_550D/Project_5_Processor/skeleton_tb.v line 24
+# End time: 19:52:08 on Nov 17,2024, Elapsed time: 0:04:46
+# Errors: 0, Warnings: 4

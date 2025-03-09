@@ -1,0 +1,19 @@
+module SRA(a, ctrl_shiftamt, res);
+    input [31:0] a;            
+    input [4:0] ctrl_shiftamt;     
+    output [31:0] res;  
+	 
+	 //parameter shift_amt = ctrl_shiftamt;
+    genvar i;
+    generate
+        for (i = 0; i < 32; i = i + 1) begin : sra_by_bit
+            if (i + ctrl_shiftamt < 32) begin
+                assign res[i] = 1 ? a[i + ctrl_shiftamt] : 0; 
+            end else begin
+                assign res[i] = 1 ? a[31] : 0;
+            end
+        end
+    endgenerate
+    assign result_sra = sra_temp;
+
+endmodule

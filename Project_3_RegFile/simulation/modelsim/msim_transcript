@@ -1,0 +1,163 @@
+# Reading D:/SoftwareDownload/Quartus/modelsim_ase/tcl/vsim/pref.tcl
+# ERROR: No extended dataflow license exists
+# do RegFile_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/SoftwareDownload/Quartus/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/Duke_HW/ECE_550D/Project_3_RegFile {D:/Duke_HW/ECE_550D/Project_3_RegFile/regfile.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:25:20 on Oct 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Duke_HW/ECE_550D/Project_3_RegFile" D:/Duke_HW/ECE_550D/Project_3_RegFile/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 13:25:20 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Duke_HW/ECE_550D/Project_3_RegFile {D:/Duke_HW/ECE_550D/Project_3_RegFile/reg_32bits.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:25:20 on Oct 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Duke_HW/ECE_550D/Project_3_RegFile" D:/Duke_HW/ECE_550D/Project_3_RegFile/reg_32bits.v 
+# -- Compiling module reg_32bits
+# 
+# Top level modules:
+# 	reg_32bits
+# End time: 13:25:20 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Duke_HW/ECE_550D/Project_3_RegFile {D:/Duke_HW/ECE_550D/Project_3_RegFile/dec_5to32.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:25:20 on Oct 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Duke_HW/ECE_550D/Project_3_RegFile" D:/Duke_HW/ECE_550D/Project_3_RegFile/dec_5to32.v 
+# -- Compiling module dec_5to32
+# 
+# Top level modules:
+# 	dec_5to32
+# End time: 13:25:20 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Duke_HW/ECE_550D/Project_3_RegFile {D:/Duke_HW/ECE_550D/Project_3_RegFile/w_port.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:25:21 on Oct 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Duke_HW/ECE_550D/Project_3_RegFile" D:/Duke_HW/ECE_550D/Project_3_RegFile/w_port.v 
+# -- Compiling module w_port
+# 
+# Top level modules:
+# 	w_port
+# End time: 13:25:21 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Duke_HW/ECE_550D/Project_3_RegFile {D:/Duke_HW/ECE_550D/Project_3_RegFile/r_port.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:25:21 on Oct 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Duke_HW/ECE_550D/Project_3_RegFile" D:/Duke_HW/ECE_550D/Project_3_RegFile/r_port.v 
+# -- Compiling module r_port
+# 
+# Top level modules:
+# 	r_port
+# End time: 13:25:21 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Duke_HW/ECE_550D/Project_3_RegFile {D:/Duke_HW/ECE_550D/Project_3_RegFile/tristate_buffer_32.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:25:21 on Oct 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Duke_HW/ECE_550D/Project_3_RegFile" D:/Duke_HW/ECE_550D/Project_3_RegFile/tristate_buffer_32.v 
+# -- Compiling module tristate_buffer_32
+# 
+# Top level modules:
+# 	tristate_buffer_32
+# End time: 13:25:21 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Duke_HW/ECE_550D/Project_3_RegFile {D:/Duke_HW/ECE_550D/Project_3_RegFile/reg_sets_of_32.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:25:21 on Oct 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Duke_HW/ECE_550D/Project_3_RegFile" D:/Duke_HW/ECE_550D/Project_3_RegFile/reg_sets_of_32.v 
+# -- Compiling module reg_sets_of_32
+# 
+# Top level modules:
+# 	reg_sets_of_32
+# End time: 13:25:21 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Duke_HW/ECE_550D/Project_3_RegFile {D:/Duke_HW/ECE_550D/Project_3_RegFile/dffe.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:25:21 on Oct 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Duke_HW/ECE_550D/Project_3_RegFile" D:/Duke_HW/ECE_550D/Project_3_RegFile/dffe.v 
+# -- Compiling module dffe_with_clr
+# 
+# Top level modules:
+# 	dffe_with_clr
+# End time: 13:25:21 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/Duke_HW/ECE_550D/Project_3_RegFile {D:/Duke_HW/ECE_550D/Project_3_RegFile/regfile_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:25:21 on Oct 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Duke_HW/ECE_550D/Project_3_RegFile" D:/Duke_HW/ECE_550D/Project_3_RegFile/regfile_tb.v 
+# -- Compiling module regfile_tb
+# 
+# Top level modules:
+# 	regfile_tb
+# End time: 13:25:21 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  regfile_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" regfile_tb 
+# Start time: 13:25:21 on Oct 02,2024
+# Loading work.regfile_tb
+# Loading work.regfile
+# Loading work.w_port
+# Loading work.dec_5to32
+# Loading work.reg_sets_of_32
+# Loading work.reg_32bits
+# Loading work.r_port
+# Loading work.dffe_with_clr
+# Loading work.tristate_buffer_32
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#                    0 << Starting the Simulation >>
+#                   80 << Writing register  0 with 0000dead >>
+#                  160 << Writing register  1 with 0000dead >>
+#                  240 << Writing register  2 with 0000dead >>
+#                  320 << Writing register  3 with 0000dead >>
+#                  400 << Writing register  4 with 0000dead >>
+#                  480 << Writing register  5 with 0000dead >>
+#                  560 << Writing register  6 with 0000dead >>
+#                  640 << Writing register  7 with 0000dead >>
+#                  720 << Writing register  8 with 0000dead >>
+#                  800 << Writing register  9 with 0000dead >>
+#                  880 << Writing register 10 with 0000dead >>
+#                  960 << Writing register 11 with 0000dead >>
+#                 1040 << Writing register 12 with 0000dead >>
+#                 1120 << Writing register 13 with 0000dead >>
+#                 1200 << Writing register 14 with 0000dead >>
+#                 1280 << Writing register 15 with 0000dead >>
+#                 1360 << Writing register 16 with 0000dead >>
+#                 1440 << Writing register 17 with 0000dead >>
+#                 1520 << Writing register 18 with 0000dead >>
+#                 1600 << Writing register 19 with 0000dead >>
+#                 1680 << Writing register 20 with 0000dead >>
+#                 1760 << Writing register 21 with 0000dead >>
+#                 1840 << Writing register 22 with 0000dead >>
+#                 1920 << Writing register 23 with 0000dead >>
+#                 2000 << Writing register 24 with 0000dead >>
+#                 2080 << Writing register 25 with 0000dead >>
+#                 2160 << Writing register 26 with 0000dead >>
+#                 2240 << Writing register 27 with 0000dead >>
+#                 2320 << Writing register 28 with 0000dead >>
+#                 2400 << Writing register 29 with 0000dead >>
+#                 2480 << Writing register 30 with 0000dead >>
+#                 2560 << Writing register 31 with 0000dead >>
+# The simulation completed without errors
+# ** Note: $stop    : D:/Duke_HW/ECE_550D/Project_3_RegFile/regfile_tb.v(47)
+#    Time: 2620 ns  Iteration: 1  Instance: /regfile_tb
+# Break in Module regfile_tb at D:/Duke_HW/ECE_550D/Project_3_RegFile/regfile_tb.v line 47
+# End time: 13:25:53 on Oct 02,2024, Elapsed time: 0:00:32
+# Errors: 0, Warnings: 0

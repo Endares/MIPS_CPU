@@ -1,0 +1,305 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Duke_HW/ECE_550D/Project_2_FullALU/simulation/modelsim
+vADD
+Z1 !s110 1727277698
+!i10b 1
+!s100 _d@cUWR<j0@Wzf4g_f`k72
+IjAV?8Zh3S6iDUiGiV=FY;0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1726803244
+8D:/Duke_HW/ECE_550D/Project_2_FullALU/ADD.v
+FD:/Duke_HW/ECE_550D/Project_2_FullALU/ADD.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1727277698.000000
+!s107 D:/Duke_HW/ECE_550D/Project_2_FullALU/ADD.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Duke_HW/ECE_550D/Project_2_FullALU|D:/Duke_HW/ECE_550D/Project_2_FullALU/ADD.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+D:/Duke_HW/ECE_550D/Project_2_FullALU
+Z7 tCvgOpt 0
+n@a@d@d
+valu
+R1
+!i10b 1
+!s100 4ifSKlBIGLn?1;EXl04Cl1
+IZT3[QlWd=KV0dM[3WLgmJ0
+R2
+R0
+w1726846795
+8D:/Duke_HW/ECE_550D/Project_2_FullALU/alu.v
+FD:/Duke_HW/ECE_550D/Project_2_FullALU/alu.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Duke_HW/ECE_550D/Project_2_FullALU/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Duke_HW/ECE_550D/Project_2_FullALU|D:/Duke_HW/ECE_550D/Project_2_FullALU/alu.v|
+!i113 1
+R5
+R6
+R7
+valu_AND
+Z8 !s110 1727277699
+!i10b 1
+!s100 5EjJBc;K=NThBZHA@[Uc^3
+I`h@jU0k]9_Qm4]k5;:SdB3
+R2
+R0
+w1726802216
+8D:/Duke_HW/ECE_550D/Project_2_FullALU/alu_AND.v
+FD:/Duke_HW/ECE_550D/Project_2_FullALU/alu_AND.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z9 !s108 1727277699.000000
+!s107 D:/Duke_HW/ECE_550D/Project_2_FullALU/alu_AND.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Duke_HW/ECE_550D/Project_2_FullALU|D:/Duke_HW/ECE_550D/Project_2_FullALU/alu_AND.v|
+!i113 1
+R5
+R6
+R7
+nalu_@a@n@d
+valu_OR
+R8
+!i10b 1
+!s100 KS`inlm6E_^GULKWlIjYb1
+I]CKgzhW=iFN:N:9[@Hg4a2
+R2
+R0
+w1726802240
+8D:/Duke_HW/ECE_550D/Project_2_FullALU/alu_OR.v
+FD:/Duke_HW/ECE_550D/Project_2_FullALU/alu_OR.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 D:/Duke_HW/ECE_550D/Project_2_FullALU/alu_OR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Duke_HW/ECE_550D/Project_2_FullALU|D:/Duke_HW/ECE_550D/Project_2_FullALU/alu_OR.v|
+!i113 1
+R5
+R6
+R7
+nalu_@o@r
+valu_tb
+R8
+!i10b 1
+!s100 =YL`2zbAmMPkC:7XO[4m30
+IaB:QX4BoMeZLP;fcjo^Ke1
+R2
+R0
+w1727277560
+8D:/Duke_HW/ECE_550D/Project_2_FullALU/alu_tb.v
+FD:/Duke_HW/ECE_550D/Project_2_FullALU/alu_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R9
+!s107 D:/Duke_HW/ECE_550D/Project_2_FullALU/alu_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Duke_HW/ECE_550D/Project_2_FullALU|D:/Duke_HW/ECE_550D/Project_2_FullALU/alu_tb.v|
+!i113 1
+R5
+R6
+R7
+vCSA_32bit
+R1
+!i10b 1
+!s100 E]?aBUbi?L`Y4GON;Y8hK1
+I0SD@f_GURHS6;Y>8hF7UT0
+R2
+R0
+w1726790784
+8D:/Duke_HW/ECE_550D/Project_2_FullALU/CSA_32bit.v
+FD:/Duke_HW/ECE_550D/Project_2_FullALU/CSA_32bit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Duke_HW/ECE_550D/Project_2_FullALU/CSA_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Duke_HW/ECE_550D/Project_2_FullALU|D:/Duke_HW/ECE_550D/Project_2_FullALU/CSA_32bit.v|
+!i113 1
+R5
+R6
+R7
+n@c@s@a_32bit
+vfull_adder
+R1
+!i10b 1
+!s100 FzoaSZG5Q1Hj_jFcaG8[B2
+IRBY1N1k;HTKIP0BFfm71g0
+R2
+R0
+w1726790698
+8D:/Duke_HW/ECE_550D/Project_2_FullALU/full_adder.v
+FD:/Duke_HW/ECE_550D/Project_2_FullALU/full_adder.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Duke_HW/ECE_550D/Project_2_FullALU/full_adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Duke_HW/ECE_550D/Project_2_FullALU|D:/Duke_HW/ECE_550D/Project_2_FullALU/full_adder.v|
+!i113 1
+R5
+R6
+R7
+vmux8_32bit
+R8
+!i10b 1
+!s100 GfX27K[4lNgh^WNFd98O93
+ISR4A`gNcQ?do9zIM><D<83
+R2
+R0
+w1726846632
+8D:/Duke_HW/ECE_550D/Project_2_FullALU/mux8_32bit.v
+FD:/Duke_HW/ECE_550D/Project_2_FullALU/mux8_32bit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 D:/Duke_HW/ECE_550D/Project_2_FullALU/mux8_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Duke_HW/ECE_550D/Project_2_FullALU|D:/Duke_HW/ECE_550D/Project_2_FullALU/mux8_32bit.v|
+!i113 1
+R5
+R6
+R7
+vRCA_8bit
+R1
+!i10b 1
+!s100 O[kGFdHzZAb9197k]g9Ok2
+I`kPDVAiz:>;1ZcKQj_jfK3
+R2
+R0
+w1726790809
+8D:/Duke_HW/ECE_550D/Project_2_FullALU/RCA_8bit.v
+FD:/Duke_HW/ECE_550D/Project_2_FullALU/RCA_8bit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Duke_HW/ECE_550D/Project_2_FullALU/RCA_8bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Duke_HW/ECE_550D/Project_2_FullALU|D:/Duke_HW/ECE_550D/Project_2_FullALU/RCA_8bit.v|
+!i113 1
+R5
+R6
+R7
+n@r@c@a_8bit
+vRCA_8bit_pro
+R1
+!i10b 1
+!s100 Uz6`fEa1O3o8[W7f]1g<`3
+IOoNdI9hm[MlcB9Ac>cUED2
+R2
+R0
+w1726790765
+8D:/Duke_HW/ECE_550D/Project_2_FullALU/RCA_8bit_pro.v
+FD:/Duke_HW/ECE_550D/Project_2_FullALU/RCA_8bit_pro.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Duke_HW/ECE_550D/Project_2_FullALU/RCA_8bit_pro.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Duke_HW/ECE_550D/Project_2_FullALU|D:/Duke_HW/ECE_550D/Project_2_FullALU/RCA_8bit_pro.v|
+!i113 1
+R5
+R6
+R7
+n@r@c@a_8bit_pro
+vSLL
+R1
+!i10b 1
+!s100 @FUP9L0GmEWNRWR_312`b3
+INAchbJk@BSbcG7[RT]in43
+R2
+R0
+w1726800957
+8D:/Duke_HW/ECE_550D/Project_2_FullALU/SLL.v
+FD:/Duke_HW/ECE_550D/Project_2_FullALU/SLL.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Duke_HW/ECE_550D/Project_2_FullALU/SLL.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Duke_HW/ECE_550D/Project_2_FullALU|D:/Duke_HW/ECE_550D/Project_2_FullALU/SLL.v|
+!i113 1
+R5
+R6
+R7
+n@s@l@l
+vSRA
+R8
+!i10b 1
+!s100 Pc0[fm=[ze[NAd[JJcPnz1
+IRAS?C7i?X_jgkIICDW:XG0
+R2
+R0
+w1727275887
+8D:/Duke_HW/ECE_550D/Project_2_FullALU/SRA.v
+FD:/Duke_HW/ECE_550D/Project_2_FullALU/SRA.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Duke_HW/ECE_550D/Project_2_FullALU/SRA.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Duke_HW/ECE_550D/Project_2_FullALU|D:/Duke_HW/ECE_550D/Project_2_FullALU/SRA.v|
+!i113 1
+R5
+R6
+R7
+n@s@r@a
+vSUB
+R1
+!i10b 1
+!s100 93zKYnHaQ_iT3K8>49Lz;2
+IW_PdHI=EAc]dD9dK80PfX3
+R2
+R0
+w1726848682
+8D:/Duke_HW/ECE_550D/Project_2_FullALU/SUB.v
+FD:/Duke_HW/ECE_550D/Project_2_FullALU/SUB.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Duke_HW/ECE_550D/Project_2_FullALU/SUB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Duke_HW/ECE_550D/Project_2_FullALU|D:/Duke_HW/ECE_550D/Project_2_FullALU/SUB.v|
+!i113 1
+R5
+R6
+R7
+n@s@u@b

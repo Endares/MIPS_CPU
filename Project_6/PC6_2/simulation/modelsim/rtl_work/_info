@@ -1,0 +1,416 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/simulation/modelsim
+vAltera_UP_PS2_Command_Out
+Z1 !s110 1733767878
+!i10b 1
+!s100 ZjDIV:z^W4aE7ECD]ReVK0
+I5OO;P<gN6mL9AL4B2mU0O0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1696698562
+8C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/Altera_UP_PS2_Command_Out.v
+FC:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/Altera_UP_PS2_Command_Out.v
+Z4 L0 10
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1733767878.000000
+!s107 C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/Altera_UP_PS2_Command_Out.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2|C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/Altera_UP_PS2_Command_Out.v|
+!i113 1
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work +incdir+C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2
+Z9 tCvgOpt 0
+n@altera_@u@p_@p@s2_@command_@out
+vAltera_UP_PS2_Data_In
+R1
+!i10b 1
+!s100 ee^TmQcGZ[E_>UMojW[Zg0
+IU4Zjcb9P1475fW0:SKKi?1
+R2
+R0
+R3
+8C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/Altera_UP_PS2_Data_In.v
+FC:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/Altera_UP_PS2_Data_In.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/Altera_UP_PS2_Data_In.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2|C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/Altera_UP_PS2_Data_In.v|
+!i113 1
+R7
+R8
+R9
+n@altera_@u@p_@p@s2_@data_@in
+vdmem
+R1
+!i10b 1
+!s100 Mf==1Z5X5eXB?1PVG7k`T3
+INf^a6E6P1:JLm]O3f<VcS3
+R2
+R0
+Z10 w1696698560
+8C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/dmem.v
+FC:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/dmem.v
+Z11 L0 39
+R5
+r1
+!s85 0
+31
+Z12 !s108 1733767877.000000
+!s107 C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/dmem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2|C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/dmem.v|
+!i113 1
+R7
+R8
+R9
+vHexadecimal_To_Seven_Segment
+Z13 !s110 1733767877
+!i10b 1
+!s100 >j7dlo6D<6b_bXMV;SleR2
+I5lhTIb::N;n@3DBaUiiVH0
+R2
+R0
+R3
+8C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/Hexadecimal_To_Seven_Segment.v
+FC:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/Hexadecimal_To_Seven_Segment.v
+L0 9
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/Hexadecimal_To_Seven_Segment.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2|C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/Hexadecimal_To_Seven_Segment.v|
+!i113 1
+R7
+R8
+R9
+n@hexadecimal_@to_@seven_@segment
+vimem
+R13
+!i10b 1
+!s100 mRc`N<n9;SnR=4imM5oM]1
+Ik?=z94mFF9_noSL38FKZR0
+R2
+R0
+R3
+8C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/imem.v
+FC:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/imem.v
+R11
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/imem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2|C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/imem.v|
+!i113 1
+R7
+R8
+R9
+vimg_data
+R1
+!i10b 1
+!s100 N@dBmhfZQg>lEFDnNB1z_0
+IAPK`;2N@_Ro?0cSJVYDm@2
+R2
+R0
+w1730227932
+8C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/img_data.v
+FC:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/img_data.v
+R11
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/img_data.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2|C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/img_data.v|
+!i113 1
+R7
+R8
+R9
+vimg_index
+R1
+!i10b 1
+!s100 36LA8:8GWa3eH:z<f;Gdz3
+I:ZG2_7iR=3ihQdM8Aa<F81
+R2
+R0
+w1730227946
+8C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/img_index.v
+FC:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/img_index.v
+L0 40
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/img_index.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2|C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/img_index.v|
+!i113 1
+R7
+R8
+R9
+vlcd
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R1
+!i10b 1
+!s100 4d9[jBL5f6iUZ]`z^C42R1
+I1baYb]?<KhW;BA@cU:FAl0
+R2
+!s105 lcd_sv_unit
+S1
+R0
+R3
+8C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/lcd.sv
+FC:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/lcd.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/lcd.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2|C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/lcd.sv|
+!i113 1
+o-sv -work work
+!s92 -sv -work work +incdir+C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2
+R9
+vpll
+R13
+!i10b 1
+!s100 el8m9?VhINk2D<LX>]oEj3
+IUjDIfYCh=YRfWBN?S@LaJ1
+R2
+R0
+R3
+8C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/pll.v
+FC:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/pll.v
+R11
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/pll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2|C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/pll.v|
+!i113 1
+R7
+R8
+R9
+vpll_altpll
+R1
+!i10b 1
+!s100 2[X4]z<HMg5W5S4]lA8_11
+IICQW<@doMFQ4zaJS4lBB>0
+R2
+R0
+w1696698564
+8C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/db/pll_altpll.v
+FC:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/db/pll_altpll.v
+L0 30
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/db/pll_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/db|C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/db/pll_altpll.v|
+!i113 1
+R7
+!s92 -vlog01compat -work work +incdir+C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/db
+R9
+vprocessor
+R13
+!i10b 1
+!s100 b^`i`bZd[P62I>l32;Aam1
+IR`BA=7lS3IN_e`WmP>zQB1
+R2
+R0
+R3
+8C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/processor.v
+FC:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/processor.v
+L0 1
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/processor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2|C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/processor.v|
+!i113 1
+R7
+R8
+R9
+vPS2_Controller
+R13
+!i10b 1
+!s100 <>S@9mPfjGE71j_51gD;:0
+I9QjVCe3@a>a@]Z71PKbkH0
+R2
+R0
+w1733765973
+8C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/PS2_Controller.v
+FC:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/PS2_Controller.v
+L0 9
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/PS2_Controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2|C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/PS2_Controller.v|
+!i113 1
+R7
+R8
+R9
+n@p@s2_@controller
+vPS2_Interface
+R13
+!i10b 1
+!s100 =5N1N3NQDg3`^RcXWX5Nc1
+IC3@6iaCQBZhaCM6cW7j_Q0
+R2
+R0
+w1731423640
+8C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/PS2_Interface.v
+FC:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/PS2_Interface.v
+L0 1
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/PS2_Interface.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2|C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/PS2_Interface.v|
+!i113 1
+R7
+R8
+R9
+n@p@s2_@interface
+vReset_Delay
+R13
+!i10b 1
+!s100 <?EH4X[VcB<k?aKTEg:<H0
+I9TPgk7lZ<ISPW==3R^6_H2
+R2
+R0
+R10
+8C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/Reset_Delay.v
+FC:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/Reset_Delay.v
+L0 1
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/Reset_Delay.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2|C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/Reset_Delay.v|
+!i113 1
+R7
+R8
+R9
+n@reset_@delay
+vskeleton
+R13
+!i10b 1
+!s100 BDfCkefc8NO0UNgCRRA520
+Il=fom9d0O8WgB1alfFo?n1
+R2
+R0
+w1731306636
+8C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/skeleton.v
+FC:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/skeleton.v
+L0 1
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/skeleton.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2|C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/skeleton.v|
+!i113 1
+R7
+R8
+R9
+vVGA_Audio_PLL
+R13
+!i10b 1
+!s100 ]_G[h[5PmjnW=UbgX^dRW3
+Ik4>z4_7WDoF6cKfV]goad2
+R2
+R0
+R3
+8C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/VGA_Audio_PLL.v
+FC:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/VGA_Audio_PLL.v
+R11
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/VGA_Audio_PLL.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2|C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/VGA_Audio_PLL.v|
+!i113 1
+R7
+R8
+R9
+n@v@g@a_@audio_@p@l@l
+vvga_controller
+R1
+!i10b 1
+!s100 BAOnT?5>1e>d`a8j@Zjel0
+I8OJWooT3[nWoT0XYiPWV:3
+R2
+R0
+w1733767808
+8C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/vga_controller.v
+FC:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/vga_controller.v
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/vga_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2|C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/vga_controller.v|
+!i113 1
+R7
+R8
+R9
+vvideo_sync_generator
+R1
+!i10b 1
+!s100 5jkgiEod8eSjhRXb_KO0n3
+Id9nK`BR<7EE7Pk@MNhzY50
+R2
+R0
+R3
+8C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/video_sync_generator.v
+FC:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/video_sync_generator.v
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/video_sync_generator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2|C:/Users/endar/Desktop/PS2_skeleton_restored-2/PC6_2/video_sync_generator.v|
+!i113 1
+R7
+R8
+R9

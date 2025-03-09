@@ -1,0 +1,505 @@
+Analysis & Synthesis report for FullALU
+Wed Sep 25 11:21:03 2024
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Port Connectivity Checks: "mux8_32bit:_res"
+ 11. Port Connectivity Checks: "SUB:_sub"
+ 12. Port Connectivity Checks: "ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder1|RCA_8bit:RCA_0"
+ 13. Port Connectivity Checks: "ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder1|RCA_8bit:RCA_1"
+ 14. Port Connectivity Checks: "ADD:_add|CSA_32bit:add_32|RCA_8bit:adder0"
+ 15. Port Connectivity Checks: "ADD:_add"
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Sep 25 11:21:03 2024       ;
+; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Revision Name                      ; FullALU                                     ;
+; Top-level Entity Name              ; alu                                         ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 624                                         ;
+;     Total combinational functions  ; 624                                         ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 109                                         ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                                      ; alu                ; FullALU            ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; OpenCore Plus hardware evaluation                                          ; Enable             ; Enable             ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                       ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                         ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------+---------+
+; full_adder.v                     ; yes             ; User Verilog HDL File  ; D:/Duke_HW/ECE_550D/Project_2_FullALU/full_adder.v   ;         ;
+; alu.v                            ; yes             ; User Verilog HDL File  ; D:/Duke_HW/ECE_550D/Project_2_FullALU/alu.v          ;         ;
+; RCA_8bit_pro.v                   ; yes             ; User Verilog HDL File  ; D:/Duke_HW/ECE_550D/Project_2_FullALU/RCA_8bit_pro.v ;         ;
+; CSA_32bit.v                      ; yes             ; User Verilog HDL File  ; D:/Duke_HW/ECE_550D/Project_2_FullALU/CSA_32bit.v    ;         ;
+; RCA_8bit.v                       ; yes             ; User Verilog HDL File  ; D:/Duke_HW/ECE_550D/Project_2_FullALU/RCA_8bit.v     ;         ;
+; ADD.v                            ; yes             ; User Verilog HDL File  ; D:/Duke_HW/ECE_550D/Project_2_FullALU/ADD.v          ;         ;
+; SUB.v                            ; yes             ; User Verilog HDL File  ; D:/Duke_HW/ECE_550D/Project_2_FullALU/SUB.v          ;         ;
+; SLL.v                            ; yes             ; User Verilog HDL File  ; D:/Duke_HW/ECE_550D/Project_2_FullALU/SLL.v          ;         ;
+; SRA.v                            ; yes             ; User Verilog HDL File  ; D:/Duke_HW/ECE_550D/Project_2_FullALU/SRA.v          ;         ;
+; alu_AND.v                        ; yes             ; User Verilog HDL File  ; D:/Duke_HW/ECE_550D/Project_2_FullALU/alu_AND.v      ;         ;
+; alu_OR.v                         ; yes             ; User Verilog HDL File  ; D:/Duke_HW/ECE_550D/Project_2_FullALU/alu_OR.v       ;         ;
+; mux8_32bit.v                     ; yes             ; User Verilog HDL File  ; D:/Duke_HW/ECE_550D/Project_2_FullALU/mux8_32bit.v   ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                           ;
++---------------------------------------------+-------------------------+
+; Resource                                    ; Usage                   ;
++---------------------------------------------+-------------------------+
+; Estimated Total logic elements              ; 624                     ;
+;                                             ;                         ;
+; Total combinational functions               ; 624                     ;
+; Logic element usage by number of LUT inputs ;                         ;
+;     -- 4 input functions                    ; 325                     ;
+;     -- 3 input functions                    ; 254                     ;
+;     -- <=2 input functions                  ; 45                      ;
+;                                             ;                         ;
+; Logic elements by mode                      ;                         ;
+;     -- normal mode                          ; 624                     ;
+;     -- arithmetic mode                      ; 0                       ;
+;                                             ;                         ;
+; Total registers                             ; 0                       ;
+;     -- Dedicated logic registers            ; 0                       ;
+;     -- I/O registers                        ; 0                       ;
+;                                             ;                         ;
+; I/O pins                                    ; 109                     ;
+;                                             ;                         ;
+; Embedded Multiplier 9-bit elements          ; 0                       ;
+;                                             ;                         ;
+; Maximum fan-out node                        ; ctrl_ALUopcode[1]~input ;
+; Maximum fan-out                             ; 74                      ;
+; Total fan-out                               ; 2296                    ;
+; Average fan-out                             ; 2.73                    ;
++---------------------------------------------+-------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                         ;
++---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------+--------------+--------------+
+; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                              ; Entity Name  ; Library Name ;
++---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------+--------------+--------------+
+; |alu                            ; 624 (4)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 109  ; 0            ; |alu                                                                             ; alu          ; work         ;
+;    |ADD:_add|                   ; 66 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add                                                                    ; ADD          ; work         ;
+;       |CSA_32bit:add_32|        ; 66 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32                                                   ; CSA_32bit    ; work         ;
+;          |RCA_8bit:adder0|      ; 10 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit:adder0                                   ; RCA_8bit     ; work         ;
+;             |full_adder:FA1|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit:adder0|full_adder:FA1                    ; full_adder   ; work         ;
+;             |full_adder:FA2|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit:adder0|full_adder:FA2                    ; full_adder   ; work         ;
+;             |full_adder:FA3|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit:adder0|full_adder:FA3                    ; full_adder   ; work         ;
+;             |full_adder:FA4|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit:adder0|full_adder:FA4                    ; full_adder   ; work         ;
+;             |full_adder:FA5|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit:adder0|full_adder:FA5                    ; full_adder   ; work         ;
+;             |full_adder:FA6|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit:adder0|full_adder:FA6                    ; full_adder   ; work         ;
+;             |full_adder:FA7|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit:adder0|full_adder:FA7                    ; full_adder   ; work         ;
+;          |RCA_8bit_pro:adder1|  ; 17 (3)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder1                               ; RCA_8bit_pro ; work         ;
+;             |RCA_8bit:RCA_0|    ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder1|RCA_8bit:RCA_0                ; RCA_8bit     ; work         ;
+;                |full_adder:FA1| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder1|RCA_8bit:RCA_0|full_adder:FA1 ; full_adder   ; work         ;
+;                |full_adder:FA2| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder1|RCA_8bit:RCA_0|full_adder:FA2 ; full_adder   ; work         ;
+;                |full_adder:FA3| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder1|RCA_8bit:RCA_0|full_adder:FA3 ; full_adder   ; work         ;
+;                |full_adder:FA4| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder1|RCA_8bit:RCA_0|full_adder:FA4 ; full_adder   ; work         ;
+;                |full_adder:FA5| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder1|RCA_8bit:RCA_0|full_adder:FA5 ; full_adder   ; work         ;
+;                |full_adder:FA6| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder1|RCA_8bit:RCA_0|full_adder:FA6 ; full_adder   ; work         ;
+;             |RCA_8bit:RCA_1|    ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder1|RCA_8bit:RCA_1                ; RCA_8bit     ; work         ;
+;                |full_adder:FA1| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder1|RCA_8bit:RCA_1|full_adder:FA1 ; full_adder   ; work         ;
+;                |full_adder:FA2| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder1|RCA_8bit:RCA_1|full_adder:FA2 ; full_adder   ; work         ;
+;                |full_adder:FA3| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder1|RCA_8bit:RCA_1|full_adder:FA3 ; full_adder   ; work         ;
+;                |full_adder:FA4| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder1|RCA_8bit:RCA_1|full_adder:FA4 ; full_adder   ; work         ;
+;                |full_adder:FA5| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder1|RCA_8bit:RCA_1|full_adder:FA5 ; full_adder   ; work         ;
+;                |full_adder:FA6| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder1|RCA_8bit:RCA_1|full_adder:FA6 ; full_adder   ; work         ;
+;          |RCA_8bit_pro:adder2|  ; 20 (2)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder2                               ; RCA_8bit_pro ; work         ;
+;             |RCA_8bit:RCA_0|    ; 9 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder2|RCA_8bit:RCA_0                ; RCA_8bit     ; work         ;
+;                |full_adder:FA1| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder2|RCA_8bit:RCA_0|full_adder:FA1 ; full_adder   ; work         ;
+;                |full_adder:FA3| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder2|RCA_8bit:RCA_0|full_adder:FA3 ; full_adder   ; work         ;
+;                |full_adder:FA4| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder2|RCA_8bit:RCA_0|full_adder:FA4 ; full_adder   ; work         ;
+;                |full_adder:FA5| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder2|RCA_8bit:RCA_0|full_adder:FA5 ; full_adder   ; work         ;
+;                |full_adder:FA6| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder2|RCA_8bit:RCA_0|full_adder:FA6 ; full_adder   ; work         ;
+;             |RCA_8bit:RCA_1|    ; 9 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder2|RCA_8bit:RCA_1                ; RCA_8bit     ; work         ;
+;                |full_adder:FA1| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder2|RCA_8bit:RCA_1|full_adder:FA1 ; full_adder   ; work         ;
+;                |full_adder:FA3| ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder2|RCA_8bit:RCA_1|full_adder:FA3 ; full_adder   ; work         ;
+;                |full_adder:FA4| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder2|RCA_8bit:RCA_1|full_adder:FA4 ; full_adder   ; work         ;
+;                |full_adder:FA5| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder2|RCA_8bit:RCA_1|full_adder:FA5 ; full_adder   ; work         ;
+;                |full_adder:FA6| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder2|RCA_8bit:RCA_1|full_adder:FA6 ; full_adder   ; work         ;
+;          |RCA_8bit_pro:adder3|  ; 19 (3)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder3                               ; RCA_8bit_pro ; work         ;
+;             |RCA_8bit:RCA_0|    ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder3|RCA_8bit:RCA_0                ; RCA_8bit     ; work         ;
+;                |full_adder:FA1| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder3|RCA_8bit:RCA_0|full_adder:FA1 ; full_adder   ; work         ;
+;                |full_adder:FA2| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder3|RCA_8bit:RCA_0|full_adder:FA2 ; full_adder   ; work         ;
+;                |full_adder:FA3| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder3|RCA_8bit:RCA_0|full_adder:FA3 ; full_adder   ; work         ;
+;                |full_adder:FA4| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder3|RCA_8bit:RCA_0|full_adder:FA4 ; full_adder   ; work         ;
+;                |full_adder:FA5| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder3|RCA_8bit:RCA_0|full_adder:FA5 ; full_adder   ; work         ;
+;                |full_adder:FA6| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder3|RCA_8bit:RCA_0|full_adder:FA6 ; full_adder   ; work         ;
+;             |RCA_8bit:RCA_1|    ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder3|RCA_8bit:RCA_1                ; RCA_8bit     ; work         ;
+;                |full_adder:FA1| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder3|RCA_8bit:RCA_1|full_adder:FA1 ; full_adder   ; work         ;
+;                |full_adder:FA2| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder3|RCA_8bit:RCA_1|full_adder:FA2 ; full_adder   ; work         ;
+;                |full_adder:FA3| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder3|RCA_8bit:RCA_1|full_adder:FA3 ; full_adder   ; work         ;
+;                |full_adder:FA4| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder3|RCA_8bit:RCA_1|full_adder:FA4 ; full_adder   ; work         ;
+;                |full_adder:FA5| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder3|RCA_8bit:RCA_1|full_adder:FA5 ; full_adder   ; work         ;
+;                |full_adder:FA6| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder3|RCA_8bit:RCA_1|full_adder:FA6 ; full_adder   ; work         ;
+;    |SLL:_sll|                   ; 102 (102)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SLL:_sll                                                                    ; SLL          ; work         ;
+;    |SRA:_sra|                   ; 99 (99)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SRA:_sra                                                                    ; SRA          ; work         ;
+;    |SUB:_sub|                   ; 84 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SUB:_sub                                                                    ; SUB          ; work         ;
+;       |CSA_32bit:sub_32|        ; 72 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SUB:_sub|CSA_32bit:sub_32                                                   ; CSA_32bit    ; work         ;
+;          |RCA_8bit:adder0|      ; 18 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SUB:_sub|CSA_32bit:sub_32|RCA_8bit:adder0                                   ; RCA_8bit     ; work         ;
+;             |full_adder:FA0|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SUB:_sub|CSA_32bit:sub_32|RCA_8bit:adder0|full_adder:FA0                    ; full_adder   ; work         ;
+;             |full_adder:FA1|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SUB:_sub|CSA_32bit:sub_32|RCA_8bit:adder0|full_adder:FA1                    ; full_adder   ; work         ;
+;             |full_adder:FA2|    ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SUB:_sub|CSA_32bit:sub_32|RCA_8bit:adder0|full_adder:FA2                    ; full_adder   ; work         ;
+;             |full_adder:FA3|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SUB:_sub|CSA_32bit:sub_32|RCA_8bit:adder0|full_adder:FA3                    ; full_adder   ; work         ;
+;             |full_adder:FA4|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SUB:_sub|CSA_32bit:sub_32|RCA_8bit:adder0|full_adder:FA4                    ; full_adder   ; work         ;
+;             |full_adder:FA5|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SUB:_sub|CSA_32bit:sub_32|RCA_8bit:adder0|full_adder:FA5                    ; full_adder   ; work         ;
+;             |full_adder:FA6|    ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SUB:_sub|CSA_32bit:sub_32|RCA_8bit:adder0|full_adder:FA6                    ; full_adder   ; work         ;
+;             |full_adder:FA7|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SUB:_sub|CSA_32bit:sub_32|RCA_8bit:adder0|full_adder:FA7                    ; full_adder   ; work         ;
+;          |RCA_8bit_pro:adder1|  ; 17 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SUB:_sub|CSA_32bit:sub_32|RCA_8bit_pro:adder1                               ; RCA_8bit_pro ; work         ;
+;             |RCA_8bit:RCA_0|    ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SUB:_sub|CSA_32bit:sub_32|RCA_8bit_pro:adder1|RCA_8bit:RCA_0                ; RCA_8bit     ; work         ;
+;                |full_adder:FA4| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SUB:_sub|CSA_32bit:sub_32|RCA_8bit_pro:adder1|RCA_8bit:RCA_0|full_adder:FA4 ; full_adder   ; work         ;
+;          |RCA_8bit_pro:adder2|  ; 20 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SUB:_sub|CSA_32bit:sub_32|RCA_8bit_pro:adder2                               ; RCA_8bit_pro ; work         ;
+;             |RCA_8bit:RCA_0|    ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SUB:_sub|CSA_32bit:sub_32|RCA_8bit_pro:adder2|RCA_8bit:RCA_0                ; RCA_8bit     ; work         ;
+;                |full_adder:FA3| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SUB:_sub|CSA_32bit:sub_32|RCA_8bit_pro:adder2|RCA_8bit:RCA_0|full_adder:FA3 ; full_adder   ; work         ;
+;                |full_adder:FA5| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SUB:_sub|CSA_32bit:sub_32|RCA_8bit_pro:adder2|RCA_8bit:RCA_0|full_adder:FA5 ; full_adder   ; work         ;
+;                |full_adder:FA6| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SUB:_sub|CSA_32bit:sub_32|RCA_8bit_pro:adder2|RCA_8bit:RCA_0|full_adder:FA6 ; full_adder   ; work         ;
+;          |RCA_8bit_pro:adder3|  ; 17 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SUB:_sub|CSA_32bit:sub_32|RCA_8bit_pro:adder3                               ; RCA_8bit_pro ; work         ;
+;             |RCA_8bit:RCA_0|    ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SUB:_sub|CSA_32bit:sub_32|RCA_8bit_pro:adder3|RCA_8bit:RCA_0                ; RCA_8bit     ; work         ;
+;                |full_adder:FA3| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SUB:_sub|CSA_32bit:sub_32|RCA_8bit_pro:adder3|RCA_8bit:RCA_0|full_adder:FA3 ; full_adder   ; work         ;
+;                |full_adder:FA5| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SUB:_sub|CSA_32bit:sub_32|RCA_8bit_pro:adder3|RCA_8bit:RCA_0|full_adder:FA5 ; full_adder   ; work         ;
+;                |full_adder:FA6| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SUB:_sub|CSA_32bit:sub_32|RCA_8bit_pro:adder3|RCA_8bit:RCA_0|full_adder:FA6 ; full_adder   ; work         ;
+;                |full_adder:FA7| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|SUB:_sub|CSA_32bit:sub_32|RCA_8bit_pro:adder3|RCA_8bit:RCA_0|full_adder:FA7 ; full_adder   ; work         ;
+;    |alu_AND:_and|               ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|alu_AND:_and                                                                ; alu_AND      ; work         ;
+;    |alu_OR:_or|                 ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|alu_OR:_or                                                                  ; alu_OR       ; work         ;
+;    |mux8_32bit:_res|            ; 251 (251)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |alu|mux8_32bit:_res                                                             ; mux8_32bit   ; work         ;
++---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------+--------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
+; 11:1               ; 4 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |alu|mux8_32bit:_res|data_out[7]  ;
+; 11:1               ; 7 bits    ; 49 LEs        ; 42 LEs               ; 7 LEs                  ; No         ; |alu|mux8_32bit:_res|data_out[14] ;
+; 11:1               ; 7 bits    ; 49 LEs        ; 49 LEs               ; 0 LEs                  ; No         ; |alu|mux8_32bit:_res|data_out[21] ;
+; 12:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |alu|mux8_32bit:_res|data_out[3]  ;
+; 12:1               ; 3 bits    ; 24 LEs        ; 21 LEs               ; 3 LEs                  ; No         ; |alu|mux8_32bit:_res|data_out[27] ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |alu|mux8_32bit:_res|data_out[0]  ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |alu|mux8_32bit:_res|data_out[29] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
+
+
++---------------------------------------------+
+; Port Connectivity Checks: "mux8_32bit:_res" ;
++------+-------+----------+-------------------+
+; Port ; Type  ; Severity ; Details           ;
++------+-------+----------+-------------------+
+; in7  ; Input ; Info     ; Stuck at GND      ;
+; in6  ; Input ; Info     ; Stuck at GND      ;
++------+-------+----------+-------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SUB:_sub"                                                                           ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder1|RCA_8bit:RCA_0"                                                                                                                        ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; cin     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; cin[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder1|RCA_8bit:RCA_1"                                                                                                                        ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; cin     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; cin[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ADD:_add|CSA_32bit:add_32|RCA_8bit:adder0"                                              ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; overflow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ADD:_add"                                                                           ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 109                         ;
+; cycloneiii_lcell_comb ; 624                         ;
+;     normal            ; 624                         ;
+;         2 data inputs ; 45                          ;
+;         3 data inputs ; 254                         ;
+;         4 data inputs ; 325                         ;
+;                       ;                             ;
+; Max LUT depth         ; 29.00                       ;
+; Average LUT depth     ; 12.37                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Processing started: Wed Sep 25 11:20:52 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FullALU -c FullALU
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file full_adder.v
+    Info (12023): Found entity 1: full_adder File: D:/Duke_HW/ECE_550D/Project_2_FullALU/full_adder.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu.v
+    Info (12023): Found entity 1: alu File: D:/Duke_HW/ECE_550D/Project_2_FullALU/alu.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu_tb.v
+    Info (12023): Found entity 1: alu_tb File: D:/Duke_HW/ECE_550D/Project_2_FullALU/alu_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file rca_8bit_pro.v
+    Info (12023): Found entity 1: RCA_8bit_pro File: D:/Duke_HW/ECE_550D/Project_2_FullALU/RCA_8bit_pro.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file csa_32bit.v
+    Info (12023): Found entity 1: CSA_32bit File: D:/Duke_HW/ECE_550D/Project_2_FullALU/CSA_32bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file rca_8bit.v
+    Info (12023): Found entity 1: RCA_8bit File: D:/Duke_HW/ECE_550D/Project_2_FullALU/RCA_8bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file add.v
+    Info (12023): Found entity 1: ADD File: D:/Duke_HW/ECE_550D/Project_2_FullALU/ADD.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sub.v
+    Info (12023): Found entity 1: SUB File: D:/Duke_HW/ECE_550D/Project_2_FullALU/SUB.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sll.v
+    Info (12023): Found entity 1: SLL File: D:/Duke_HW/ECE_550D/Project_2_FullALU/SLL.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sra.v
+    Info (12023): Found entity 1: SRA File: D:/Duke_HW/ECE_550D/Project_2_FullALU/SRA.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu_and.v
+    Info (12023): Found entity 1: alu_AND File: D:/Duke_HW/ECE_550D/Project_2_FullALU/alu_AND.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu_or.v
+    Info (12023): Found entity 1: alu_OR File: D:/Duke_HW/ECE_550D/Project_2_FullALU/alu_OR.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux8_32bit.v
+    Info (12023): Found entity 1: mux8_32bit File: D:/Duke_HW/ECE_550D/Project_2_FullALU/mux8_32bit.v Line: 1
+Info (12127): Elaborating entity "alu" for the top level hierarchy
+Info (12128): Elaborating entity "ADD" for hierarchy "ADD:_add" File: D:/Duke_HW/ECE_550D/Project_2_FullALU/alu.v Line: 12
+Info (12128): Elaborating entity "CSA_32bit" for hierarchy "ADD:_add|CSA_32bit:add_32" File: D:/Duke_HW/ECE_550D/Project_2_FullALU/ADD.v Line: 7
+Info (12128): Elaborating entity "RCA_8bit" for hierarchy "ADD:_add|CSA_32bit:add_32|RCA_8bit:adder0" File: D:/Duke_HW/ECE_550D/Project_2_FullALU/CSA_32bit.v Line: 13
+Info (12128): Elaborating entity "full_adder" for hierarchy "ADD:_add|CSA_32bit:add_32|RCA_8bit:adder0|full_adder:FA0" File: D:/Duke_HW/ECE_550D/Project_2_FullALU/RCA_8bit.v Line: 12
+Info (12128): Elaborating entity "RCA_8bit_pro" for hierarchy "ADD:_add|CSA_32bit:add_32|RCA_8bit_pro:adder1" File: D:/Duke_HW/ECE_550D/Project_2_FullALU/CSA_32bit.v Line: 14
+Info (12128): Elaborating entity "SUB" for hierarchy "SUB:_sub" File: D:/Duke_HW/ECE_550D/Project_2_FullALU/alu.v Line: 13
+Info (12128): Elaborating entity "alu_AND" for hierarchy "alu_AND:_and" File: D:/Duke_HW/ECE_550D/Project_2_FullALU/alu.v Line: 14
+Info (12128): Elaborating entity "alu_OR" for hierarchy "alu_OR:_or" File: D:/Duke_HW/ECE_550D/Project_2_FullALU/alu.v Line: 15
+Info (12128): Elaborating entity "SLL" for hierarchy "SLL:_sll" File: D:/Duke_HW/ECE_550D/Project_2_FullALU/alu.v Line: 16
+Info (12128): Elaborating entity "SRA" for hierarchy "SRA:_sra" File: D:/Duke_HW/ECE_550D/Project_2_FullALU/alu.v Line: 17
+Info (12128): Elaborating entity "mux8_32bit" for hierarchy "mux8_32bit:_res" File: D:/Duke_HW/ECE_550D/Project_2_FullALU/alu.v Line: 19
+Warning (12020): Port "cin" on the entity instantiation of "RCA_0" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/Duke_HW/ECE_550D/Project_2_FullALU/RCA_8bit_pro.v Line: 14
+Warning (12020): Port "cin" on the entity instantiation of "RCA_1" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/Duke_HW/ECE_550D/Project_2_FullALU/RCA_8bit_pro.v Line: 13
+Warning (12020): Port "cin" on the entity instantiation of "RCA_0" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/Duke_HW/ECE_550D/Project_2_FullALU/RCA_8bit_pro.v Line: 14
+Warning (12020): Port "cin" on the entity instantiation of "RCA_1" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/Duke_HW/ECE_550D/Project_2_FullALU/RCA_8bit_pro.v Line: 13
+Warning (12020): Port "cin" on the entity instantiation of "RCA_0" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/Duke_HW/ECE_550D/Project_2_FullALU/RCA_8bit_pro.v Line: 14
+Warning (12020): Port "cin" on the entity instantiation of "RCA_1" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/Duke_HW/ECE_550D/Project_2_FullALU/RCA_8bit_pro.v Line: 13
+Warning (12020): Port "cin" on the entity instantiation of "RCA_0" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/Duke_HW/ECE_550D/Project_2_FullALU/RCA_8bit_pro.v Line: 14
+Warning (12020): Port "cin" on the entity instantiation of "RCA_1" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/Duke_HW/ECE_550D/Project_2_FullALU/RCA_8bit_pro.v Line: 13
+Warning (12020): Port "cin" on the entity instantiation of "RCA_0" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/Duke_HW/ECE_550D/Project_2_FullALU/RCA_8bit_pro.v Line: 14
+Warning (12020): Port "cin" on the entity instantiation of "RCA_1" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/Duke_HW/ECE_550D/Project_2_FullALU/RCA_8bit_pro.v Line: 13
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "ctrl_ALUopcode[3]" File: D:/Duke_HW/ECE_550D/Project_2_FullALU/alu.v Line: 4
+    Warning (15610): No output dependent on input pin "ctrl_ALUopcode[4]" File: D:/Duke_HW/ECE_550D/Project_2_FullALU/alu.v Line: 4
+Info (21057): Implemented 733 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 74 input pins
+    Info (21059): Implemented 35 output pins
+    Info (21061): Implemented 624 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 4783 megabytes
+    Info: Processing ended: Wed Sep 25 11:21:03 2024
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:07
+
+
